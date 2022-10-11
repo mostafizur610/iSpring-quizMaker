@@ -1,6 +1,7 @@
 .navbar {
-    height: 80px;
+    height: 85px;
     background-color: aquamarine;
+    margin-bottom: 20px;
 }
 
 .nav-container {
@@ -10,18 +11,23 @@
 
 .name {
     display: flex;
+    /* margin-bottom: 20px; */
 }
 
 .name img {
     height: 80px;
     width: 80px;
-    margin-left: 80px;
+    margin-left: 75px;
     padding: 15px;
+}
+
+.name h2 {
+    margin-top: 15px;
 }
 
 .link {
     margin-right: 200px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .link-section {
