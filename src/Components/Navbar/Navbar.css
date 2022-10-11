@@ -1,0 +1,31 @@
+.navbar {
+    height: 80px;
+    background-color: aquamarine;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+}
+
+.name img {
+    height: 50px;
+    width: 50px;
+    margin-left: 80px;
+    padding: 20px;
+}
+
+.link {
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.link-section {
+    text-decoration: none;
+    padding-left: 50px;
+
+}
