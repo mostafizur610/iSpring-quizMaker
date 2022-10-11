@@ -5,8 +5,7 @@ import Blog from './Components/Blog/Blog';
 import Chart from './Components/Chart/Chart';
 import Home from './Components/Home/Home';
 import Main from './layouts/Main';
-// import Header from './Components/Header/Header';
-// import Navbar from './Components/Navbar/Navbar';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +15,7 @@ function App() {
       children: [
         {
           path: '/',
+          loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
         },
         {
