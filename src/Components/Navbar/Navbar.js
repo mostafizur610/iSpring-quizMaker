@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav className='navbar nav-container'>
             <div className='name'>
                 <img src={logo} alt="" />
-                <h1>iSpring Quiz-Maker</h1>
+                <h2 className='justify-center'>iSpring Quiz-Maker</h2>
             </div>
             <div className='link'>
                 <Link className='link-section' to='/'>Home</Link>
