@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './Components/Blog/Blog';
 import Chart from './Components/Chart/Chart';
+import Quiz from './Components/Quiz/Quiz';
 import Home from './Components/Home/Home';
 import Main from './layouts/Main';
 
@@ -24,6 +25,13 @@ function App() {
         {
           path: '/blog',
           element: <Blog></Blog>
+        },
+        {
+          path: '/quiz/:id',
+          loader: async ({ params }) => {
+            return await fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          },
+          element: <Quiz />
         }
       ]
     },
