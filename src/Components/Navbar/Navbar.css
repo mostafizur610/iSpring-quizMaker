@@ -11,7 +11,6 @@
 
 .name {
     display: flex;
-    /* margin-bottom: 20px; */
 }
 
 .name img {
@@ -34,4 +33,23 @@
     text-decoration: none;
     padding-left: 50px;
 
+}
+
+
+/* for mobile device  */
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: 110px;
+        background-color: rgb(240, 216, 194);
+        margin-bottom: 40px;
+    }
+
+    .name {
+        height: 70px;
+    }
+
+    .name img {
+        margin-left: 20px;
+    }
 }

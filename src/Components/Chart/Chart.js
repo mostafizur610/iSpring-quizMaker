@@ -14,15 +14,16 @@ const Chart = () => {
     }, [])
 
     return (
-        // <ResponsiveContainer width="100%" height="100%">
-        // </ResponsiveContainer>
+
         <div className='d-flex justify-content-center mt-5'>
-            <BarChart width={600} height={400} data={chart}>
-                <Bar dataKey="total" fill="#8884d8" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip></Tooltip>
-            </BarChart>
+            <ResponsiveContainer width="80%" aspect={2}>
+                <BarChart data={chart}>
+                    <Bar dataKey="total" fill="#8884d8" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip></Tooltip>
+                </BarChart>
+            </ResponsiveContainer>
         </div>
 
     );

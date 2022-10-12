@@ -1,0 +1,7 @@
+@media only screen and (max-width: 600px) {
+    .topics-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
