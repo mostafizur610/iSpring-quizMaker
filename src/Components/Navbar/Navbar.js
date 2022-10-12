@@ -16,8 +16,6 @@ const Navbar = () => {
                 <Link className='link-section' to='/chart'>Chart</Link>
                 <Link className='link-section' to='/about'>About</Link>
                 <Link className='link-section' to='/blog'>Blogs</Link>
-
-                {/* className={({ isActive }) => isActive ? 'active' : undefined} to='/' */}
             </div>
         </nav>
     );
