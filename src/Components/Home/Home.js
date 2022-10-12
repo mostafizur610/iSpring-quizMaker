@@ -11,8 +11,8 @@ const Home = () => {
             <div>
                 <Header></Header>
             </div>
-            {/* <h2>topics: {topics.data.length}</h2> */}
-            <div className='d-flex justify-content-around my-5'>
+            <h2 className='d-flex justify-content-center my-3'>Total topics: {topics.data.length}</h2>
+            <div className='d-flex justify-content-evenly my-2'>
                 {
                     topics.data.map(topic => <Topics
                         key={topic.id}

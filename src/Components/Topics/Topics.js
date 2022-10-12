@@ -11,7 +11,7 @@ const Topics = ({ topic }) => {
             <Card.Img className="border" style={name === 'Git' ? { backgroundColor: 'black' } : {}} variant="top" src={logo} />
             <Card.Body className='d-flex justify-content-between'>
                 <Card.Title>{name}</Card.Title>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary">Start Practice ✔</Button>
             </Card.Body>
             <Card.Text className='d-flex justify-content-center border'>
                 Total Question: {total}

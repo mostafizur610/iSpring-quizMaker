@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import About from './Components/About/About';
 import Blog from './Components/Blog/Blog';
 import Chart from './Components/Chart/Chart';
 import Home from './Components/Home/Home';
@@ -23,20 +22,18 @@ function App() {
           element: <Chart></Chart>
         },
         {
-          path: '/about',
-          element: <About></About>
-        },
-        {
           path: '/blog',
           element: <Blog></Blog>
         }
       ]
+    },
+    {
+      path: '*', element: <div><h1 className='d-flex justify-content-center mt-5 text-success'>404 Not Found</h1><br /><h4 className='d-flex justify-content-center text-warning'>This route is not defined</h4></div>
     }
   ])
   return (
     <div>
       <RouterProvider router={router}></RouterProvider>
-
     </div>
   );
 }
